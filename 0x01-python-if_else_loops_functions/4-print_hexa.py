@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 for _ in range(99):
-    print("{} = {:#X}".format(_, _))
+    print("{} = {:#x}".format(_, _))
