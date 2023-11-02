@@ -6,9 +6,9 @@ if __name__ == "__main__":
     index = 1
 
     if not args:
-        print("0 arguments")
+        print("0 arguments.")
     else:
-        print("{} argument{}:".format(len(args), 's' if len(args) > 1 else ''))
+        print("{} argument{}".format(len(args), 's' if len(args) > 1 else ''))
         for arg in args:
             print("{:d}: {}".format(index, arg))
             index += 1
