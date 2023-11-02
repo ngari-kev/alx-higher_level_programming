@@ -10,5 +10,5 @@ if __name__ == "__main__":
     else:
         print("{} argument{}:".format(len(args), 's' if len(args) > 1 else ''))
         for arg in args:
-            print("{}: {}".format(index, arg))
+            print("{:d}: {}".format(index, arg))
             index += 1
