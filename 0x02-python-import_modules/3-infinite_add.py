@@ -6,6 +6,6 @@ if __name__ == "__main__":
     summ = 0
 
     for arg in args:
-            summ += int(arg)
+        summ += int(arg)
 
     print("{}".format(summ))
