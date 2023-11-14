@@ -8,4 +8,5 @@ def print_sorted_dictionary(a_dictionary):
     if a_dictionary is None:
         return None
     sortd = dict(sorted(a_dictionary.items()))
-    return sortd
+    for key, value in a_dictionary.items():
+        print("{}: {}".format(key, value))
