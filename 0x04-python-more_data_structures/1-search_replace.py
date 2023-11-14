@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 '''
    A function that searches for an element in a list and
    replaces it with another.
