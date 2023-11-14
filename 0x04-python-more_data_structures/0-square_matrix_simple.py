@@ -3,7 +3,5 @@ def square_matrix_simple(matrix=[]):
     if matrix is None:
         return None
     new = matrix
-    for lst in new:
-        for i in lst:
-            i = i ** 2
+    new = list(map(lambda row: list(map(lambda x: x ** 2, row)), matrix))
     return new
