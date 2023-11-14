@@ -8,4 +8,4 @@ def multiply_by_2(a_dictionary):
     dic = a_dictionary.copy()
     for key in dic:
         dic[key] *= 2
-    return dic
+    return dict(sorted(dic.items()))
