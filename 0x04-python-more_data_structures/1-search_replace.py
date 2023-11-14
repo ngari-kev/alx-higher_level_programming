@@ -12,7 +12,8 @@ def search_replace(my_list, search, replace):
     if my_list is None:
         return None
     new_list = my_list.copy()
-    for _ in new_list:
-        if _ == search:
-            _ = replace
+    idx = 0
+    for idx in range(len(new_list)):
+        if new_list[idx] == search:
+            new_list[idx] = replace
     return new_list
