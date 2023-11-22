@@ -1,0 +1,1 @@
+This is a subdirectory that contains tasks on exceptions in Python.
