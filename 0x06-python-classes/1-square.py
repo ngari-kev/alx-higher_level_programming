@@ -10,7 +10,6 @@ class Square:
     Args:
         size - length of teh square
     '''
-
-
+    
     def __init__(self, size):
         self.__size = size
