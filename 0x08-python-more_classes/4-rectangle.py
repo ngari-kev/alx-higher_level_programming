@@ -75,4 +75,7 @@ class Rectangle:
         for _ in range(self.__height):
             rect = rect + "#" * self.width + "\n"
         return rect.rstrip()
-    
+
+    def __del__(self):
+        '''Deletes an instance'''
+        print("Bye rectangle ...")
