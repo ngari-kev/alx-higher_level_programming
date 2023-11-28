@@ -71,7 +71,5 @@ class Rectangle:
         '''
         if self.__height == 0 or self.__width == 0:
             return ("")
-        rect = ""
-        for _ in range(self.__height):
-            rect = rect + "#" * self.width + "\n"
-        return rect.rstrip()
+        s = f"Rectangle(width={self.__width,}, height={self.__height})"
+        return s
