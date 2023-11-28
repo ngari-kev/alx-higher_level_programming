@@ -71,5 +71,5 @@ class Rectangle:
         '''
         if self.__height == 0 or self.__width == 0:
             return ("")
-        s = f"Rectangle(width={self.__width,}, height={self.__height})"
+        s = f"Rectangle(width={self.__width}, height={self.__height})"
         return s
