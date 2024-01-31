@@ -1,9 +1,4 @@
 #!/usr/bin/python3
-"""
-This module defines a Rectangle class
-"""
-
-
 class Rectangle:
     """
     Represents a Rectangle
@@ -11,21 +6,22 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """
-        Initilaization of a new rectangle
+        Initialization of a new rectangle
         Args:
-            width (must be an int): The width of the rectangle.
+            width (optional, default = 0, must be an int): The width of the rectangle.
+            height (optional, default = 0, must be an int): The height of the rectangle.
         """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """access current size of the rectangle"""
-        return (self.__width)
+        """Retrieve the width of the rectangle"""
+        return self.__width
 
     @width.setter
     def width(self, value):
-        """sets the actual width of the Recatngle"""
+        """Set the width of the Rectangle"""
         if not isinstance(value, int):
             raise TypeError("Width must be an integer")
         elif value < 0:
@@ -34,12 +30,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """sets the actual height of the Rectangle"""
-        return (self.__height)
+        """Retrieve the height of the rectangle"""
+        return self.__height
 
     @height.setter
     def height(self, value):
-        """Sets the actual height of the Rectangle"""
+        """Set the height of the Rectangle"""
         if not isinstance(value, int):
             raise TypeError("Height must be an integer")
         elif value < 0:
