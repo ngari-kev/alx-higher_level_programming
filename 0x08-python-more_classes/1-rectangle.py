@@ -8,8 +8,8 @@ class Rectangle:
         """
         Initialization of a new rectangle
         Args:
-            width (optional, default = 0, must be an int): The width of the rectangle.
-            height (optional, default = 0, must be an int): The height of the rectangle.
+            width (optional, must be an int): The width of the rectangle.
+            height (optional, must be an int): The height of the rectangle.
         """
         self.width = width
         self.height = height
