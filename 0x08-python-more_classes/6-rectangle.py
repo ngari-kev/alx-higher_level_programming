@@ -16,7 +16,8 @@ class Rectangle:
         Args:
             width (must be an int): The width of the rectangle.
             height (must be an int): The height of the rectangle.
-            number_of_instances: increments number of members of the rectangle class when one is created
+            number_of_instances: increments number of members of the
+            rectangle class when one is created
         """
         self.width = width
         self.height = height
@@ -86,6 +87,8 @@ class Rectangle:
         return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
-        '''deletes the instance of a rectangle and reduces the number of instances by one'''
+        '''
+        deletes the instance of a rectangle and
+        reduces the number of instances by one'''
         nunmber_of_instances -= 1
         print("Bye rectangle...")
