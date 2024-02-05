@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+'''This Module is a blue print of the creation of a Singly linked list'''
 
 
 class Node:
+    '''This class defines a node'''
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
@@ -26,5 +28,6 @@ class Node:
 
 
 class SinglyLinkedList:
+    '''This class defines the actual singly linked list'''
     def __init__(self):
         self.head = None
