@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''
-This Module is a blue print of the creation of a Singly linked list
+This Module is a blue print of the creation of a Singly linked list.
+Serves both the Node class and the SinglyLinkedList class
 '''
 
 
@@ -41,6 +42,10 @@ class Node:
 
 
 class SinglyLinkedList:
-    '''This class defines the actual singly linked list'''
+    '''
+    This class defines the actual singly linked list
+    Args:
+        head - set to None
+    '''
     def __init__(self):
         self.head = None
