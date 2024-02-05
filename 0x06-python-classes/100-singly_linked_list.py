@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-'''This Module is a blue print of the creation of a Singly linked list'''
+'''
+This Module is a blue print of the creation of a Singly linked list
+'''
 
 
 class Node:
-    '''This class defines a node'''
+    '''
+    This class defines a node.
+    Args:
+        data - actual data to be stored in the node
+        next_node - pointer to the next node
+    '''
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
