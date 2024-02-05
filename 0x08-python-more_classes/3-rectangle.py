@@ -67,4 +67,11 @@ class Rectangle:
             print("")
 
     def __str__(self):
-        return f"{self.my_print()}"
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        result = ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                result += "#"
+            result += "\n"
+        return result.rstrip("\n")
