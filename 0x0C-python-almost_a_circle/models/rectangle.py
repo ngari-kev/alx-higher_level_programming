@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-
 """
 This module contains the Rectangle class
 """
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -13,8 +13,7 @@ class Rectangle(Base):
         self.width = width
         self.height = height
         self.x = x
-        super().__init__.(id)
-
+        super().__init__(id)
 
     @property
     def width(self):
@@ -26,20 +25,17 @@ class Rectangle(Base):
         """WIdth setter"""
         self.__width = value
 
-
     @property
     def height(self):
         """Height setter"""
         return self.__height
 
-
     @height.setter
-    """Height setter"""
     def height(self, value):
+        """Height setter"""
         self.__height = value
 
-    
-    @proprty
+    @property
     def x(self):
         """X getter"""
         return self.__x
@@ -52,10 +48,9 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """ Setter for x"""
-        self.__x = x
-
+        self.__x = value
 
     @y.setter
-    def y(self):
+    def y(self, value):
         """y setter"""
-        self.__y = y
+        self.__y = value
