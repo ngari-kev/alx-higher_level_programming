@@ -14,6 +14,7 @@ class Rectangle(Base):
         self.width = width
         self.height = height
         self.x = x
+        self.y = y
         super().__init__(id)
 
     @property
@@ -83,3 +84,8 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
+    def __str__(self):
+        """String representation of Rectangle"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.x, self.y, self.width, self.height
+            )
