@@ -94,15 +94,43 @@ class Rectangle(Base):
             self.id, self.x, self.y, self.width, self.height
             )
 
-    def update(self, *args):
-        """assigns an argument to each attribute"""
-        if len(args) == 1:
-            self.id = args[0]
-        elif len(args) == 2:
-            self.width = args[1]
-        elif len(args) == 3:
-            self.height = args[2]
-        elif len(args) == 4:
-            self.x = args[3]
-        else:
-            self.y = args[4]
+    def update(self, *args, **kwargs):
+        """Assigns an argument to each attribute"""
+        if args:
+            if len(args) > 5:
+                raise TypeError("update() takes at most 5 positional "
+                                f"arguments but {len(args)} were given")
+
+            attributes = ["id", "width", "height", "x", "y"]
+            for i, arg in enumerate(args):
+                if i >= len(attributes):
+                    raise TypeError(
+                        f"<= 5 positional arguments but {len(args)} were given"
+                    )
+                if attributes[i] == "id":
+                    self.id = arg
+                elif attributes[i] == "width":
+                    self.width = arg
+                elif attributes[i] == "height":
+                    self.height = arg
+                elif attributes[i] == "x":
+                    self.x = arg
+                elif attributes[i] == "y":
+                    self.y = arg
+
+        if kwargs:
+            for key, value in kwargs.items():
+                if key not in ["id", "width", "height", "x", "y"]:
+                    raise TypeError(
+                        f"'{key}'- invalid keyword argument for this function"
+                    )
+                if key == "id":
+                    self.id = value
+                elif key == "width":
+                    self.width = value
+                elif key == "height":
+                    self.height = value
+                elif key == "x":
+                    self.x = value
+                elif key == "y":
+                    self.y = value
