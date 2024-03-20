@@ -3,6 +3,7 @@
 This is a module containg one function: read_file
 """
 
+
 def read_file(filename=""):
     """
     This is a function that reads from a UTF-8
