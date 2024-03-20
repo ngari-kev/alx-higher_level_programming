@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+This is a module containg one function: read_file
+"""
 
 def read_file(filename=""):
     """
