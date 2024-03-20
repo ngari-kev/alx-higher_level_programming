@@ -15,5 +15,5 @@ def from_json_string(my_str):
     Returns:
         Python object.
     """
-    obj = json.loads(my_string)
+    obj = json.loads(my_str)
     return obj
