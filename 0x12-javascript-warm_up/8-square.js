@@ -9,7 +9,7 @@ if (!isNaN(number)) {
     for (let i = 0; i < number; i++) {
       row += 'X';
     }
-	console.log(row);
+    console.log(row);
   }
 } else {
   console.log('Missing size');
