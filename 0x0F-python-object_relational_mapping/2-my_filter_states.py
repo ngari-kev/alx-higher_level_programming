@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
     cursor = con.cursor()
     cursor.execute("SELECT * FROM states \
-                   WHERE BINARY name = '{}'".format(argv[4]))
+                   WHERE BINARY name = {}".format(argv[4]))
 
     entries = cursor.fetchall()
 
