@@ -9,8 +9,8 @@ if __name__ == '__main__':
                           passwd=argv[2], db=argv[3], charset='utf8')
 
     cursor = con.cursor()
-    cursor.execute("SELECT * FROM states \
-                   WHERE BINARY name = {}".format(argv[4]))
+    query = "SELECT * FROM states WHERE BINARY name = %s".format(argv[4])
+    cursor.execute(query)
 
     entries = cursor.fetchall()
 
