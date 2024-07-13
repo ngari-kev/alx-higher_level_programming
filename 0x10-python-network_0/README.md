@@ -31,42 +31,44 @@ Write a Bash script that takes in a URL, sends a request to that URL, and displa
 - The size must be displayed in bytes
 - You have to use curl
 
-<br>
+### Task 1
 
-###Task 1
+Write a Bash script that takes in a URL, sends a `GET` request to the URL, and displays the body of the response
 
-Write a Bash script that takes in a URL, sends a GET request to the URL, and displays the body of the response
-
-- Display only body of a 200 status code response
+- Display only body of a `200` status code response
 - You have to use curl
 
-<br>
+### Task 2
 
-###Task 2
+Write a Bash script that sends a `DELETE` request to the URL passed as the first argument and displays the body of the response
 
-Write a Bash script that sends a DELETE request to the URL passed as the first argument and displays the body of the response
-
-<br>
-
-###Task 3
+### Task 3
 
 Write a Bash script that takes in a URL and displays all HTTP methods the server will accept.
 
-<br>
+### Task 4
 
-###Task 4
+Write a Bash script that takes in a URL as an argument, sends a `GET` request to the URL, and displays the body of the response
 
-Write a Bash script that takes in a URL as an argument, sends a GET request to the URL, and displays the body of the response
+- A header variable `X-School-User-Id` must be sent with the value `98`
 
-- A header variable X-School-User-Id must be sent with the value 98
+### Task 5
 
-<br>
+Write a Bash script that takes in a URL, sends a `POST` request to the passed URL, and displays the body of the response
 
-###Task 5
+- A variable `email` must be sent with the value `test@gmail.com`
+- A variable `subject` must be sent with the value `I will always be here for PLD`
 
-Write a Bash script that takes in a URL, sends a POST request to the passed URL, and displays the body of the response
+### Task 6
 
-- A variable email must be sent with the value ```test@gmail.com```
-- A variable subject must be sent with the value ```I will always be here for PLD```
+**Technical interview preparation**
+- You are not allowed to google anything
+- Whiteboard first
 
-
+Write a function that finds a **peak** in a list of unsorted integers.
+- Prototype: ```def find_peak(list_of_integers)```
+- You are not allowed to import any module
+- Your algorithm must have the lowest complexity ***hint: you don’t need to go through all numbers to find a peak***
+- `6-peak.py` must contain the function
+- `6-peak.txt` must contain the complexity of your algorithm: `O(log(n))`, `O(n)`, `O(nlog(n))` or `O(n2)`
+- **Note**: there may be more than one peak in the list
